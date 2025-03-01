@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Board</title>
+    <link rel="icon" href="assets/logo.png" type="image">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        .jjj {
+            font-family: "jjj", sans-serif;
+        }
+
+        .grad {
+            background-image: linear-gradient(to right, #3752FD, #9BA8F8);
+        }
+    </style>
+</head>
+
+<body class="bg-[#f4f7ff] jjj">
+    <section class="mx-auto max-w-screen-2xl pt-4 pb-4">
+        <nav>
+            <div class="navbar bg-base-100 rounded-2xl">
+                <div class="flex-1">
+                    <a class="btn btn-ghost text-4xl"><img src="./assets/logo.png" alt=""><span
+                            class="font-light">Dev</span><span class="font-extrabold">Board</span></a>
+                </div>
+                <div class="flex-none">
+                    <ul class="menu menu-horizontal px-1 gap-2">
+                        <button class="btn rounded-full"><img src="./assets/checkbox.png" alt=""><span
+                                class="font-bold text-3xl" id="total-counter">23</span></button>
+                        <button id="theme-toggle" class="btn rounded-full"><img src="./assets/theme-btn.png" alt=""></button>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br>
+        <div class="flex gap-5">
+            <section class="rounded-2xl bg-white flex">
+                <section>
+                    <section class="p-6 flex gap-2">
+                        <div class="p flex items-center gap-5 bg-[#f4f7ff] p-4 rounded-xl">
+                            <div class="p-4 rounded-full bg-white"><img src="./assets/checkbox.png" alt=""></div>
+                            <div>
+                                <ul>Task Assigned</ul>
+                                <ul><span id="task-assigned" class="text-3xl font-bold">6</span></ul>
+                            </div>
+                        </div>
+                        <div id="blog-page" class="p flex items-center gap-5 p-4 rounded-xl grad grow">
+                            <div><img src="./assets/board.png" alt=""></div>
+                            <div class="font-medium text-2xl text-white"> Discover Something <br>New Today!
+                            </div>
+                        </div>
+                        <div class="p flex items-center gap-5 bg-[#f4f7ff] p-4 rounded-xl">
+                            <div class="p-4 rounded-full bg-white"><img src="./assets/calender.png" alt=""></div>
+                            <div>
+                                <ul id="day-name"></ul> 
+                                <ul><span id="current-date" class="text-xl font-bold"></span></ul>
+                            </div>                            
+                        </div>
+
+                    </section>
+                    <hr>
+                    <section>
+                        <div class="grid grid-cols-3 gap-5 p-5">
+                            <div class="card w-96 bg-[#f4f7ff]">
+                                <div class="card-body">
+                                    <h4 class="bg-white w-fit p-2 rounded-xl">Shop Ease</h4>
+                                    <h2 id="card1" class="card-title">Fix Mobile Button Issue</h2>
+                                    <p class="bg-white p-3 w-fit rounded-xl ">Writing or debugging computer programs has become one of the most essential skills in recent years that helps in automation, creating new technologies, and better systems.</p>
+                                    <div class="flex justify-between">
+                                        <div>Deadline <br><span class="font-semibold">21 March 2025</span></div>
+                                        <button id="bttn1" class="btn bg-blue-700 text-white">Completed</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card w-96 bg-[#f4f7ff]">
+                                <div class="card-body">
+                                    <h4 class="bg-white w-fit p-2 rounded-xl">Soft Pay</h4>
+                                    <h2 id="card2" class="card-title">Add Pay success Modal</h2>
+                                    <p class="bg-white p-3 w-fit rounded-xl">Writing or debugging computer programs has become one of the most essential skills in recent years that helps in automation, creating new technologies, and better systems.</p>
+                                    <div class="flex justify-between">
+                                        <div>Deadline <br><span class="font-semibold">21 March 2025</span></div>
+                                        <button id="bttn2" class="btn bg-blue-700 text-white">Completed</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card w-96 bg-[#f4f7ff]">
+                                <div class="card-body">
+                                    <h4 class="bg-white w-fit p-2 rounded-xl">Meta</h4>
+                                    <h2 id="card3" class="card-title">Add new reaction 🤲</h2>
+                                    <p class="bg-white p-3 w-fit rounded-xl">Writing or debugging computer programs has become one of the most essential skills in recent years that helps in automation, creating new technologies, and better systems.</p>
+                                    <div class="flex justify-between">
+                                        <div>Deadline <br><span class="font-semibold">31 March 2025</span></div>
+                                        <button id="bttn3" class="btn bg-blue-700 text-white">Completed</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card w-96 bg-[#f4f7ff]">
+                                <div class="card-body">
+                                    <h4 class="bg-white w-fit p-2 rounded-xl">Progrraming Hero</h4>
+                                    <h2 id="card4" class="card-title">Fix Video Loading Issue</h2>
+                                    <p class="bg-white p-3 w-fit rounded-xl">Writing or debugging computer programs has become one of the most essential skills in recent years that helps in automation, creating new technologies, and better systems.</p>
+                                    <div class="flex justify-between">
+                                        <div>Deadline <br><span class="font-semibold">21 March 2025</span></div>
+                                        <button id="bttn4" class="btn bg-blue-700 text-white">Completed</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card w-96 bg-[#f4f7ff]">
+                                <div class="card-body">
+                                    <h4 class="bg-white w-fit p-2 rounded-xl">Google LLC</h4>
+                                    <h2 id="card5" class="card-title">Integrate AI Search </h2>
+                                    <p class="bg-white p-3 w-fit rounded-xl">Writing or debugging computer programs has become one of the most essential skills in recent years that helps in automation, creating new technologies, and better systems.</p>
+                                    <div class="flex justify-between">
+                                        <div>Deadline <br><span class="font-semibold">01 April 2025</span></div>
+                                        <button id="bttn5" class="btn bg-blue-700 text-white">Completed</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card w-96 bg-[#f4f7ff]">
+                                <div class="card-body">
+                                    <h4 class="bg-white w-fit p-2 rounded-xl">Polygon Tech</h4>
+                                    <h2 id="card6" class="card-title">Review Ami Probashi Site</h2>
+                                    <p class="bg-white p-3 w-fit rounded-xl">Writing or debugging computer programs has become one of the most essential skills in recent years that helps in automation, creating new technologies, and better systems.</p>
+                                    <div class="flex justify-between">
+                                        <div>Deadline <br><span class="font-semibold">05 May 2025</span></div>
+                                        <button id="bttn6" class="btn bg-blue-700 text-white">Completed</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </section>
+                <div class="rounded-2xl bg-white w-3/16">
+                    <section class="p-3 max-h-screen grow">
+                        <div class="flex  justify-center items-center"><img class="p-2" src="./assets/activity.png" alt="">
+                            <h1 class="text-xl font-medium ">Activity Log</h1>
+                        </div><br>
+                        <div class="flex justify-center"><button id="clear-history" class="btn bg-blue-700 text-white">Clear History</button>
+                        </div>
+                        <br>
+                        <hr>
+                        <div id="massage" class="p-3">
+                        </div> 
+                    </section>
+                </div>
+        </div>
+    </section>
+    <script src="1.js"></script>
+    <script src="react.js"></script>
+</body>
+
+</html>
